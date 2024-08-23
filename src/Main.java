@@ -22,5 +22,8 @@ public class Main {
         System.out.println("*****************************3*");
         System.out.println("**************************sandra*");
         System.out.println("**************************marcela*");
+        System.out.println("**************************Alex*");
+        System.out.println("**************************SandrayAlex*");
+
     }
 }
