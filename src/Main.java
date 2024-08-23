@@ -20,5 +20,8 @@ public class Main {
         System.out.println("*******************************");
         System.out.println("*****************************2*");
         System.out.println("*****************************3*");
+        System.out.println("**************************sandra*");
+        System.out.println("**************************Alex*");
+        System.out.println("**************************SandrayAlex*");
     }
 }
