@@ -18,5 +18,6 @@ public class Main {
         System.out.println("10. Bucle For");
         System.out.println("11. Salir");
         System.out.println("*******************************");
+        System.out.println("*****************************2*");
     }
 }
