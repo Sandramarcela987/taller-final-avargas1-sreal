@@ -6,6 +6,7 @@ public class Main {
         int menu=0;
         int salir=0;
         do {
+
         System.out.println("************************************");
         System.out.println("|      Taller Programación         |");
         System.out.println("************************************");
@@ -70,6 +71,32 @@ public class Main {
                     System.out.println("|Switch recibe un “caso” y lo evalúa hasta encontrar el caso que corresponda   |");
                     System.out.println("|Se puede usar la opción “default” para cuando no se encuentra el caso dado.   |");
                     System.out.println("|EJEMPLO");
+
+                    int diaSemana = 0;
+                    String nombreDia;
+
+                    switch (diaSemana) {
+
+                        case 1:
+                            nombreDia = "Lunes";
+                            break;
+                        case 2:
+                            nombreDia = "Martes";
+                            break;
+                        case 3:
+                            nombreDia = "Miercoles";
+                            break;
+                        case 4:
+                            nombreDia = "Jueves";
+                            break;
+                        case 5:
+                            nombreDia = "Viernes";
+                            break;
+
+                    }
+                   // System.out.println("Hoy es" + nombreDia);
+
+
                     System.out.println("********************************************************************************");
                     scanner1.nextLine();
                     scanner1.nextLine();
