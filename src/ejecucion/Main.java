@@ -4,6 +4,7 @@ import ejemplos.Ejemplos;
 import menu.MenuPrincipal;
 import menu.SubMenus;
 
+
 import java.awt.*;
 import java.sql.SQLOutput;
 import java.util.Scanner;
@@ -91,7 +92,7 @@ public class Main {
                     System.out.println("|caracteriza por: Selección de una opción entre varias                         |");
                     System.out.println("|Switch recibe un “caso” y lo evalúa hasta encontrar el caso que corresponda   |");
                     System.out.println("|Se puede usar la opción “default” para cuando no se encuentra el caso dado.   |");
-                    System.out.println("|EJEMPLO");
+                    System.out.println("|EJEMPLO:                                                                      |");
                     Ejemplos.EjemploSwitch();
                     System.out.println("********************************************************************************");
                     scanner.nextLine();
@@ -104,7 +105,7 @@ public class Main {
                     System.out.println("|Es una estructura de control que permite evaluar una condición y retornar un  |");
                     System.out.println("|valor en función de esa condición. El operador ternario se llama así  porque, |");
                     System.out.println("|en general, es el único operador de un lenguaje que tiene tres parámetros.    |");
-                    System.out.println("|EJEMPLO");
+                    System.out.println("|EJEMPLO:                                                                      |");
                     Ejemplos.EjemploTernaria();
                     System.out.println("********************************************************************************");
                     scanner.nextLine();
@@ -118,7 +119,7 @@ public class Main {
                     System.out.println("|Es una estructura de control que permite que un bloque de código se ejecute   |");
                     System.out.println("|repetidamente mientras se cumpla cierta condición expresada en la cláusula    |");
                     System.out.println("|while.                                                                        |");
-                    System.out.println("|EJEMPLO");
+                    System.out.println("|EJEMPLO:                                                                      |");
                     Ejemplos.EjemploDoWhile();
                     System.out.println("********************************************************************************");
                     scanner.nextLine();
@@ -131,7 +132,7 @@ public class Main {
                     System.out.println("********************************************************************************");
                     System.out.println("|Un bucle while es una estructura de control en programación que repite un     |");
                     System.out.println("|bloque de código mientras una condición se evalúe como verdadera.             |");
-                    System.out.println("|EJEMPLO");
+                    System.out.println("|EJEMPLO:                                                                      |");
                     Ejemplos.EjemploWhile();
                     System.out.println("********************************************************************************");
                     scanner.nextLine();
@@ -145,6 +146,7 @@ public class Main {
                     System.out.println("|Un bucle FOR es una estructura de control que permite repetir un bloque de    |");
                     System.out.println("|código un número específico de veces. Se utiliza en programación para         |");
                     System.out.println("|automatizar tareas y procesar datos de manera eficiente.                      |");
+                    System.out.println("|EJEMPLO:                                                                      |");
                     Ejemplos.EjemploFor();
                     System.out.println("********************************************************************************");
                     scanner.nextLine();
@@ -214,7 +216,6 @@ public class Main {
                     System.out.println("|float pi = 3.1415926535f                                                      |");
                     System.out.println("|double e = 2.718281828459045235360                                            |");
                     System.out.println("********************************************************************************");
-
                     scanner.nextLine();
                     scanner.nextLine();
                     break;
@@ -243,7 +244,6 @@ public class Main {
                     System.out.println("|boolean verdadero = true                                                      |");
                     System.out.println("|boolean falso = false;                                                        |");
                     System.out.println("********************************************************************************");
-
                     scanner.nextLine();
                     scanner.nextLine();
                     break;
@@ -272,27 +272,22 @@ public class Main {
                 case 1:
                     System.out.println("****************************************************************************************");
                     System.out.println("|Los operadores aritméticos en Java son los siguientes:                                |");
-                    System.out.println("| - Suma                                                                               |");
-                    System.out.println("| - Resta                                                                              |");
-                    System.out.println("| - Multiplicación                                                                     |");
-                    System.out.println("| - División                                                                           |");
-                    System.out.println("| - Módulo                                                                             |");
+                    System.out.println("| - Suma:(+)                                                                           |");
+                    System.out.println("| - Resta:(-)                                                                          |");
+                    System.out.println("| - Multiplicación: (*)                                                                |");
+                    System.out.println("| - División:(/)                                                                       |");
+                    System.out.println("| - Módulo:(%)                                                                         |");
                     System.out.println("|Estas herramientas nos permiten realizar operaciones matemáticas básicas con facilidad|");
                     System.out.println("|Se utilizan para manipular tipos de datos numéricos y producir resultados que pueden  |");
                     System.out.println("|asignarse a variables o utilizarse en expresiones                                     |");
                     System.out.println("****************************************************************************************");
-
-
-
-
-
                     scanner.nextLine();
                     scanner.nextLine();
                     //submenuTiposOperadores(scanner);
                     break;
                 case 2:
                     System.out.println("*********************************************************************************************");
-                    System.out.println("Operadores Relacionales: Permiten comparar variables según relación de igualdad/desigualdad |");
+                    System.out.println("|Operadores Relacionales: Permiten comparar variables según relación de igualdad/desigualdad|");
                     System.out.println("|o relacción mayor/menor. Devuelven siempre un valor boolean.                               |");
                     System.out.println("|'>': Mayor que                                                                             |");
                     System.out.println("|'<': Menor que                                                                             |");
@@ -301,7 +296,6 @@ public class Main {
                     System.out.println("|'>=': Mayor o igual que                                                                    |");
                     System.out.println("|'<=': Menor o igual que                                                                    |");
                     System.out.println("*********************************************************************************************");
-
                     scanner.nextLine();
                     scanner.nextLine();
                     break;
@@ -314,7 +308,6 @@ public class Main {
                     System.out.println("|'&' : devuelve true si ambos operandos son true, evaluándolos ambos.          |");
                     System.out.println("|'|' : devuelve true uno de los operandos es true, evaluándolos ambos.         |");
                     System.out.println("********************************************************************************");
-
                     scanner.nextLine();
                     scanner.nextLine();
                     break;
@@ -328,7 +321,6 @@ public class Main {
                     System.out.println("|'/=' : op1 /= op2 à op1 = op1 / op2                                                |");
                     System.out.println("|'%=' : op1 %= op2 à op1 = op1 % op2                                                |");
                     System.out.println("*************************************************************************************");
-
                     scanner.nextLine();
                     scanner.nextLine();
                     break;
@@ -350,7 +342,6 @@ public class Main {
                     System.out.println("Opción no válida. Inténtelo de nuevo.");
                     scanner.nextLine();
                     scanner.nextLine();
-
                     break;
             }
         } while (salir2 == 0);
