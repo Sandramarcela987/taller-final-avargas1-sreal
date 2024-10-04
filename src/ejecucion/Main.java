@@ -20,6 +20,8 @@ public class Main {
 
             System.out.print("Seleccione la opción que desea consultar: ");
             int number = scanner.nextInt();
+            int outerValue = 7;
+            int innerValue = 2;
 
             switch (number) {
                 case 1:
@@ -81,6 +83,7 @@ public class Main {
                     System.out.println("|la condición inversa provocando que se tenga que comprobar la condición 2 veces mientras que si usamos el else |");
                     System.out.println("|solo necesitamos hacer la comprobación una sola vez.                                                           |");
                     System.out.println("*****************************************************************************************************************");
+                    Ejemplos.EjemploIf();
                     scanner.nextLine();
                     scanner.nextLine();
                     break;
@@ -99,18 +102,27 @@ public class Main {
                     scanner.nextLine();
                     break;
                 case 7:
-                    System.out.println("********************************************************************************");
-                    System.out.println("|                         Condicional Ternaria                                 |");
-                    System.out.println("********************************************************************************");
-                    System.out.println("|Es una estructura de control que permite evaluar una condición y retornar un  |");
-                    System.out.println("|valor en función de esa condición. El operador ternario se llama así  porque, |");
-                    System.out.println("|en general, es el único operador de un lenguaje que tiene tres parámetros.    |");
-                    System.out.println("|EJEMPLO:                                                                      |");
-                    Ejemplos.EjemploTernaria();
-                    System.out.println("********************************************************************************");
-                    scanner.nextLine();
-                    scanner.nextLine();
-                    break;
+                    System.out.println("Outer switch case 1");
+                    switch (innerValue) {
+                        case 1:
+                            System.out.println("Inner switch case 1");
+                            System.out.println("********************************************************************************");
+                            System.out.println("|                         Condicional Ternaria                                 |");
+                            System.out.println("********************************************************************************");
+                            System.out.println("|Es una estructura de control que permite evaluar una condición y retornar un  |");
+                            System.out.println("|valor en función de esa condición. El operador ternario se llama así  porque, |");
+                            System.out.println("|en general, es el único operador de un lenguaje que tiene tres parámetros.    |");
+                            break;
+                        case 2:
+                            System.out.println("Inner switch case 2");
+                            System.out.println("|EJEMPLO:                                                                      |");
+                            Ejemplos.EjemploTernaria();
+                            break;
+                        default:
+                            System.out.println("Inner switch default case");
+                            break;
+                    }
+
 
                 case 8:
                     System.out.println("********************************************************************************");

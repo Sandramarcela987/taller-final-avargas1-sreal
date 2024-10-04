@@ -1,58 +1,103 @@
 package ejemplos;
-
+import java.util.Scanner;
 public class Ejemplos {
 
+    public static void EjemploIf(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Digite un número Entero");
+        int numero = scanner.nextInt();
+           // int numero = 3;
+            if (numero > 0) {
+                System.out.println("El número es positivo.");
+            } else if (numero < 0) {
+                System.out.println("El número es negativo.");
+            } else {
+                System.out.println("El número es cero.");
+            }
+
+    }
+
     public static void EjemploSwitch() {
-        System.out.println("| switch (expression) {                                                        |\n" +
-                "|   case value1:                                                               |\n" +
-                "|    // secuencia de sentencias.                                               |\n" +
-                "|    break;                                                                    |\n" +
-                "|   case value2:                                                               |\n" +
-                "|    // secuencia de sentencias.                                               |\n" +
-                "|    break;                                                                    |\n" +
-                "|   .                                                                          |\n" +
-                "|   .                                                                          |\n" +
-                "|   .                                                                          |\n" +
-                "|   case valueN :                                                              |\n" +
-                "|    // secuencia de sentencias.                                               |\n" +
-                "|    break;                                                                    |\n" +
-                "|   default:                                                                   |\n" +
-                "|    // Default secuencia de sentencias.x                                      |\n" +
-                "| }                                                                            |");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Digite un número de la semana: ");
+        int dia = scanner.nextInt();
+                //int dia = 3;
+                String nombreDia;
+                switch (dia) {
+                    case 1:
+                        nombreDia = "Lunes";
+                        break;
+                    case 2:
+                        nombreDia = "Martes";
+                        break;
+                    case 3:
+                        nombreDia = "Miércoles";
+                        break;
+                    case 4:
+                        nombreDia = "Jueves";
+                        break;
+                    case 5:
+                        nombreDia = "Viernes";
+                        break;
+                    case 6:
+                        nombreDia = "Sábado";
+                        break;
+                    case 7:
+                        nombreDia = "Domingo";
+                        break;
+                    default:
+                        nombreDia = "Día inválido";
+                        break;
+                }
+
+                System.out.println("El día de la semana es: " + nombreDia);
+
+
 
     }
 
     public static void EjemploTernaria() {
-        System.out.println("|  int vble1 = 5;                                                             |\n" +
-                "|  int vble2 = 4;                                                              |\n" +
-                "|  int mayor;                                                                  |\n" +
-                "|                                                                              |\n" +
-                "|  mayor = (vble1 > vble2)?vble1:vble2;                                        |\n" +
-                "|                                                                              |\n" +
-                "|  System.out.println(\"El mayor de los dos números es \" + mayor);              |");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Digite un número Entero");
+        int numero = scanner.nextInt();
+        String resultado = (numero % 2 == 0) ? "El número es par" : "El número es impar"; // Mostrar el resultado
+        System.out.println(resultado);
 
     }
 
     public static void EjemploDoWhile() {
-        System.out.println("|   int i = 1;                                                                 |\n" +
-                "|  do {                                                                        |\n" +
-                "|      System.out.println(i);                                                  |\n" +
-                "|      i++;                                                                    |\n" +
-                "|  } while (i <= 10);                                                          |");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Digite un número inicial:");
+        int valor = scanner.nextInt();
+
+                do {
+                    System.out.println("Valor: " + valor);
+                    valor++;
+                } while (valor <= 5);
+
     }
 
 
     public static void EjemploWhile() {
-        System.out.println("| while (condición) {                                                          |\n" +
-                "|    // bloque de código a ejecutar mientras se cumpla la condición            |\n" +
-                "|}                                                                             |");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Digite un número inicial:");
+        int num = scanner.nextInt();
+
+                while (num <= 5) {
+                    System.out.println("Contador: " + num);
+                    num++;
+                }
 
     }
 
     public static void EjemploFor() {
-        System.out.println("|for (int i = 1; i <= 10; i++) {                                               |\n" +
-                "|    System.out.println(i);                                                    |\n" +
-                "|}                                                                             |");
+
+        for (int num1 = -5; num1 <= 5; num1++) {
+            System.out.println("Numero: " + num1);
+        }
+
 
     }
+
+
 }
