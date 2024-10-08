@@ -31,7 +31,17 @@ public class SubMenus {
 
     }
 
+    public static void Submenu2Ternarias(){
 
+        System.out.println("************************************");
+        System.out.println("|    SUBMENU Ternarias             |");
+        System.out.println("************************************");
+        System.out.println("| 1. Explicación                   |");
+        System.out.println("| 2. Ejemplo                       |");
+        System.out.println("| 3. Retornar al Menu Principal    |");
+        System.out.println("************************************");
+
+    }
 
 
 }

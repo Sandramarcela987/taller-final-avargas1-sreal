@@ -20,8 +20,8 @@ public class Main {
 
             System.out.print("Seleccione la opción que desea consultar: ");
             int number = scanner.nextInt();
-            int outerValue = 7;
-            int innerValue = 2;
+            //int outerValue = 7;
+            //int innerValue = 2;
 
             switch (number) {
                 case 1:
@@ -102,27 +102,15 @@ public class Main {
                     scanner.nextLine();
                     break;
                 case 7:
-                    System.out.println("Outer switch case 1");
-                    switch (innerValue) {
-                        case 1:
-                            System.out.println("Inner switch case 1");
-                            System.out.println("********************************************************************************");
-                            System.out.println("|                         Condicional Ternaria                                 |");
-                            System.out.println("********************************************************************************");
-                            System.out.println("|Es una estructura de control que permite evaluar una condición y retornar un  |");
-                            System.out.println("|valor en función de esa condición. El operador ternario se llama así  porque, |");
-                            System.out.println("|en general, es el único operador de un lenguaje que tiene tres parámetros.    |");
-                            break;
-                        case 2:
-                            System.out.println("Inner switch case 2");
-                            System.out.println("|EJEMPLO:                                                                      |");
-                            Ejemplos.EjemploTernaria();
-                            break;
-                        default:
-                            System.out.println("Inner switch default case");
-                            break;
-                    }
 
+                    /*System.out.println("********************************************************************************");
+                    System.out.println("|                         Condicional Ternaria                                 |");
+                    System.out.println("********************************************************************************");
+                     */       //SubMenus.Submenu2Ternarias();
+                    submenuTernarias(scanner);
+                    scanner.nextLine();
+                    scanner.nextLine();
+                    break;
 
                 case 8:
                     System.out.println("********************************************************************************");
@@ -358,4 +346,44 @@ public class Main {
             }
         } while (salir2 == 0);
     }
+    public static void submenuTernarias(Scanner scanner) {
+        int salir3 = 0;
+        do {
+
+            SubMenus.Submenu2Ternarias();
+
+            System.out.print("Seleccione la opción que desea consultar: ");
+            int number1 = scanner.nextInt();
+
+            switch (number1) {
+                case 1:
+                    System.out.println("********************************************************************************");
+                    System.out.println("|                         Condicional Ternaria                                 |");
+                    System.out.println("********************************************************************************");
+                    System.out.println("|Es una estructura de control que permite evaluar una condición y retornar un  |");
+                    System.out.println("|valor en función de esa condición. El operador ternario se llama así  porque, |");
+                    System.out.println("|en general, es el único operador de un lenguaje que tiene tres parámetros.    |");
+                    System.out.println("********************************************************************************");
+                scanner.nextLine();
+                scanner.nextLine();
+                break;
+                case 2:
+                    Ejemplos.EjemploTernaria();
+                    scanner.nextLine();
+                    scanner.nextLine();
+                    break;
+                case 3:
+                    salir3 = 1; // Regresar al menú principal
+                    break;
+                default:
+                    System.out.println("Opción no válida. Inténtelo de nuevo.");
+                    scanner.nextLine();
+                    scanner.nextLine();
+                    break;
+
+            }
+        }while (salir3 == 0);
+    }
 }
+
+
