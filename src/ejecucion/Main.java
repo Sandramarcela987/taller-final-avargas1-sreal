@@ -5,8 +5,8 @@ import menu.MenuPrincipal;
 import menu.SubMenus;
 
 
-import java.awt.*;
-import java.sql.SQLOutput;
+//import java.awt.*;
+//import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Main {
@@ -20,8 +20,7 @@ public class Main {
 
             System.out.print("Seleccione la opción que desea consultar: ");
             int number = scanner.nextInt();
-            //int outerValue = 7;
-            //int innerValue = 2;
+
 
             switch (number) {
                 case 1:
@@ -83,10 +82,6 @@ public class Main {
                     break;
                 case 7:
 
-                    /*System.out.println("********************************************************************************");
-                    System.out.println("|                         Condicional Ternaria                                 |");
-                    System.out.println("********************************************************************************");
-                     */       //SubMenus.Submenu2Ternarias();
                     submenuTernarias(scanner);
                     scanner.nextLine();
                     scanner.nextLine();
@@ -473,7 +468,6 @@ public class Main {
     public static void submenuIf(Scanner scanner) {
         int salir7 = 0;
         do {
-
             SubMenus.Submenu2If();
 
             System.out.print("Seleccione la opción que desea consultar: ");
@@ -510,7 +504,6 @@ public class Main {
                     scanner.nextLine();
                     scanner.nextLine();
                     break;
-
             }
         } while (salir7 == 0);
     }
@@ -518,9 +511,7 @@ public class Main {
     public static void submenuSwitch(Scanner scanner) {
         int salir8 = 0;
         do {
-
             SubMenus.Submenu2Switch();
-
             System.out.print("Seleccione la opción que desea consultar: ");
             int number1 = scanner.nextInt();
 
@@ -547,16 +538,11 @@ public class Main {
                     break;
                 default:
                     System.out.println("Opción no válida. Inténtelo de nuevo.");
+
                     scanner.nextLine();
                     scanner.nextLine();
                     break;
-
             }
         } while (salir8 == 0);
-
     }
-
-
 }
-
-

@@ -5,11 +5,11 @@ public class Ejemplos {
     public static void EjemploIf(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Digite un número Entero");
-        int numero = scanner.nextInt();
-           // int numero = 3;
-            if (numero > 0) {
+        int num = scanner.nextInt();
+           // int num = 3;
+            if (num > 0) {
                 System.out.println("El número es positivo.");
-            } else if (numero < 0) {
+            } else if (num < 0) {
                 System.out.println("El número es negativo.");
             } else {
                 System.out.println("El número es cero.");
@@ -51,8 +51,6 @@ public class Ejemplos {
                 }
 
                 System.out.println("El día de la semana es: " + nombreDia);
-
-
 
     }
 
