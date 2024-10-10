@@ -64,38 +64,18 @@ public class Main {
 
                 case 4:
                     System.out.println("************************************************************************************");
-                    System.out.println("                           Tipo de Operadores"                                       );
+                    System.out.println("                           Tipo de Operadores");
                     System.out.println("************************************************************************************");
                     submenuTiposOperadores(scanner);
                     break;
 
                 case 5:
-                    System.out.println("*****************************************************************************************************************");
-                    System.out.println("                      Condicional: IF, ELSE, IF ELSE                                                             ");
-                    System.out.println("*****************************************************************************************************************");
-                    System.out.println("|El flujo de ejecución en Java es lineal por lo que se va ejecutando línea a línea en el orden en el que se     |");
-                    System.out.println("|ejecutar partes del código en base a condiciones, La estructura condicional más simple en Java es el if se     |");
-                    System.out.println("|evalua una condición y en caso de que se cumpla se ejecuta el contenido entre las llaves o en caso de que se   |");
-                    System.out.println("|omitan se ejecuta el código hasta el primer «;» por lo tanto si no se usan los {} la condiciónaplica solo      |");
-                    System.out.println("|a la siguiente instrucción al if. Con el if solo podemos hacer que se ejecute un fragmento de código o no pero |");
-                    System.out.println("|en el caso de que no se cumpla la condición no se hace nada (sigue el flujo normal de ejecución)por lo que si  |");
-                    System.out.println("|queremos que se ejecute otra cosa cuando no se cumpla la condición solo con el if tenemos que hacer otro con   |");
-                    System.out.println("|la condición inversa provocando que se tenga que comprobar la condición 2 veces mientras que si usamos el else |");
-                    System.out.println("|solo necesitamos hacer la comprobación una sola vez.                                                           |");
-                    System.out.println("*****************************************************************************************************************");
-                    Ejemplos.EjemploIf();
+                    submenuIf(scanner);
                     scanner.nextLine();
                     scanner.nextLine();
                     break;
                 case 6:
-                    System.out.println("********************************************************************************");
-                    System.out.println("|                         Condicional Switch                                   |");
-                    System.out.println("********************************************************************************");
-                    System.out.println("|El condicional switch case es una estructura que evalúa más de un caso y se   |");
-                    System.out.println("|caracteriza por: Selección de una opción entre varias                         |");
-                    System.out.println("|Switch recibe un “caso” y lo evalúa hasta encontrar el caso que corresponda   |");
-                    System.out.println("|Se puede usar la opción “default” para cuando no se encuentra el caso dado.   |");
-                    System.out.println("|EJEMPLO:                                                                      |");
+                    submenuSwitch(scanner);
                     Ejemplos.EjemploSwitch();
                     System.out.println("********************************************************************************");
                     scanner.nextLine();
@@ -113,41 +93,22 @@ public class Main {
                     break;
 
                 case 8:
-                    System.out.println("********************************************************************************");
-                    System.out.println("|                            Bucle Do While                                    |");
-                    System.out.println("********************************************************************************");
-                    System.out.println("|Es una estructura de control que permite que un bloque de código se ejecute   |");
-                    System.out.println("|repetidamente mientras se cumpla cierta condición expresada en la cláusula    |");
-                    System.out.println("|while.                                                                        |");
-                    System.out.println("|EJEMPLO:                                                                      |");
-                    Ejemplos.EjemploDoWhile();
+
+                    submenuDowhile(scanner);
                     System.out.println("********************************************************************************");
                     scanner.nextLine();
                     scanner.nextLine();
                     break;
 
                 case 9:
-                    System.out.println("********************************************************************************");
-                    System.out.println("|                            Bucle While                                       |");
-                    System.out.println("********************************************************************************");
-                    System.out.println("|Un bucle while es una estructura de control en programación que repite un     |");
-                    System.out.println("|bloque de código mientras una condición se evalúe como verdadera.             |");
-                    System.out.println("|EJEMPLO:                                                                      |");
-                    Ejemplos.EjemploWhile();
+                    submenuWhile(scanner);
                     System.out.println("********************************************************************************");
                     scanner.nextLine();
                     scanner.nextLine();
                     break;
 
                 case 10:
-                    System.out.println("********************************************************************************");
-                    System.out.println("|                            Bucle For                                         |");
-                    System.out.println("********************************************************************************");
-                    System.out.println("|Un bucle FOR es una estructura de control que permite repetir un bloque de    |");
-                    System.out.println("|código un número específico de veces. Se utiliza en programación para         |");
-                    System.out.println("|automatizar tareas y procesar datos de manera eficiente.                      |");
-                    System.out.println("|EJEMPLO:                                                                      |");
-                    Ejemplos.EjemploFor();
+                    submenuFor(scanner);
                     System.out.println("********************************************************************************");
                     scanner.nextLine();
                     scanner.nextLine();
@@ -234,7 +195,7 @@ public class Main {
                     break;
                 case 4:
                     System.out.println("********************************************************************************");
-                    System.out.println("                             Boleanos"                                           );
+                    System.out.println("                             Boleanos");
                     System.out.println("********************************************************************************");
                     System.out.println("|Al igual que el grupo de caracteres, en el grupo de booleanos únicamente      |");
                     System.out.println("1encontraremos un tipo de dato, el boolean.Este tipo de datos nos permitirá    |");
@@ -346,6 +307,7 @@ public class Main {
             }
         } while (salir2 == 0);
     }
+
     public static void submenuTernarias(Scanner scanner) {
         int salir3 = 0;
         do {
@@ -364,9 +326,9 @@ public class Main {
                     System.out.println("|valor en función de esa condición. El operador ternario se llama así  porque, |");
                     System.out.println("|en general, es el único operador de un lenguaje que tiene tres parámetros.    |");
                     System.out.println("********************************************************************************");
-                scanner.nextLine();
-                scanner.nextLine();
-                break;
+                    scanner.nextLine();
+                    scanner.nextLine();
+                    break;
                 case 2:
                     Ejemplos.EjemploTernaria();
                     scanner.nextLine();
@@ -382,8 +344,219 @@ public class Main {
                     break;
 
             }
-        }while (salir3 == 0);
+        } while (salir3 == 0);
+
     }
+
+
+    public static void submenuDowhile(Scanner scanner) {
+        int salir4 = 0;
+        do {
+
+            SubMenus.Submenu2Dowhile();
+
+            System.out.print("Seleccione la opción que desea consultar: ");
+            int number1 = scanner.nextInt();
+
+            switch (number1) {
+                case 1:
+                    System.out.println("********************************************************************************");
+                    System.out.println("|                            Bucle Do While                                    |");
+                    System.out.println("********************************************************************************");
+                    System.out.println("|Es una estructura de control que permite que un bloque de código se ejecute   |");
+                    System.out.println("|repetidamente mientras se cumpla cierta condición expresada en la cláusula    |");
+                    System.out.println("|while.                                                                        |");
+                    System.out.println("|******************************************************************************|");
+                    scanner.nextLine();
+                    scanner.nextLine();
+                    break;
+                case 2:
+                    Ejemplos.EjemploDoWhile();
+                    scanner.nextLine();
+                    scanner.nextLine();
+                    break;
+                case 3:
+                    salir4 = 1; // Regresar al menú principal
+                    break;
+                default:
+                    System.out.println("Opción no válida. Inténtelo de nuevo.");
+                    scanner.nextLine();
+                    scanner.nextLine();
+                    break;
+            }
+        } while (salir4 == 0);
+
+    }
+
+
+    public static void submenuWhile(Scanner scanner) {
+        int salir5 = 0;
+        do {
+
+            SubMenus.Submenu2While();
+
+            System.out.print("Seleccione la opción que desea consultar: ");
+            int number1 = scanner.nextInt();
+
+            switch (number1) {
+                case 1:
+                    System.out.println("********************************************************************************");
+                    System.out.println("|                            Bucle While                                       |");
+                    System.out.println("********************************************************************************");
+                    System.out.println("|Un bucle while es una estructura de control en programación que repite un     |");
+                    System.out.println("|bloque de código mientras una condición se evalúe como verdadera.             |");
+                    System.out.println("********************************************************************************");
+                    scanner.nextLine();
+                    scanner.nextLine();
+                    break;
+                case 2:
+                    Ejemplos.EjemploWhile();
+                    scanner.nextLine();
+                    scanner.nextLine();
+                    break;
+                case 3:
+                    salir5 = 1; // Regresar al menú principal
+                    break;
+                default:
+                    System.out.println("Opción no válida. Inténtelo de nuevo.");
+                    scanner.nextLine();
+                    scanner.nextLine();
+                    break;
+
+            }
+        } while (salir5 == 0);
+
+    }
+
+
+    public static void submenuFor(Scanner scanner) {
+        int salir6 = 0;
+        do {
+
+            SubMenus.Submenu2For();
+
+            System.out.print("Seleccione la opción que desea consultar: ");
+            int number1 = scanner.nextInt();
+
+            switch (number1) {
+                case 1:
+                    System.out.println("********************************************************************************");
+                    System.out.println("|                            Bucle For                                         |");
+                    System.out.println("********************************************************************************");
+                    System.out.println("|Un bucle FOR es una estructura de control que permite repetir un bloque de    |");
+                    System.out.println("|código un número específico de veces. Se utiliza en programación para         |");
+                    System.out.println("|automatizar tareas y procesar datos de manera eficiente.                      |");
+                    System.out.println("********************************************************************************");
+                    scanner.nextLine();
+                    scanner.nextLine();
+                    break;
+                case 2:
+                    Ejemplos.EjemploFor();
+                    scanner.nextLine();
+                    scanner.nextLine();
+                    break;
+                case 3:
+                    salir6 = 1; // Regresar al menú principal
+                    break;
+                default:
+                    System.out.println("Opción no válida. Inténtelo de nuevo.");
+                    scanner.nextLine();
+                    scanner.nextLine();
+                    break;
+
+            }
+        } while (salir6 == 0);
+
+    }
+
+
+    public static void submenuIf(Scanner scanner) {
+        int salir7 = 0;
+        do {
+
+            SubMenus.Submenu2If();
+
+            System.out.print("Seleccione la opción que desea consultar: ");
+            int number1 = scanner.nextInt();
+
+            switch (number1) {
+                case 1:
+                    System.out.println("*****************************************************************************************************************");
+                    System.out.println("                      Condicional: IF, ELSE, IF ELSE                                                             ");
+                    System.out.println("*****************************************************************************************************************");
+                    System.out.println("|El flujo de ejecución en Java es lineal por lo que se va ejecutando línea a línea en el orden en el que se     |");
+                    System.out.println("|ejecutar partes del código en base a condiciones, La estructura condicional más simple en Java es el if se     |");
+                    System.out.println("|evalua una condición y en caso de que se cumpla se ejecuta el contenido entre las llaves o en caso de que se   |");
+                    System.out.println("|omitan se ejecuta el código hasta el primer «;» por lo tanto si no se usan los {} la condiciónaplica solo      |");
+                    System.out.println("|a la siguiente instrucción al if. Con el if solo podemos hacer que se ejecute un fragmento de código o no pero |");
+                    System.out.println("|en el caso de que no se cumpla la condición no se hace nada (sigue el flujo normal de ejecución)por lo que si  |");
+                    System.out.println("|queremos que se ejecute otra cosa cuando no se cumpla la condición solo con el if tenemos que hacer otro con   |");
+                    System.out.println("|la condición inversa provocando que se tenga que comprobar la condición 2 veces mientras que si usamos el else |");
+                    System.out.println("|solo necesitamos hacer la comprobación una sola vez.                                                           |");
+                    System.out.println("*****************************************************************************************************************");
+                    scanner.nextLine();
+                    scanner.nextLine();
+                    break;
+                case 2:
+                    Ejemplos.EjemploIf();
+                    scanner.nextLine();
+                    scanner.nextLine();
+                    break;
+                case 3:
+                    salir7 = 1; // Regresar al menú principal
+                    break;
+                default:
+                    System.out.println("Opción no válida. Inténtelo de nuevo.");
+                    scanner.nextLine();
+                    scanner.nextLine();
+                    break;
+
+            }
+        } while (salir7 == 0);
+    }
+
+    public static void submenuSwitch(Scanner scanner) {
+        int salir8 = 0;
+        do {
+
+            SubMenus.Submenu2Switch();
+
+            System.out.print("Seleccione la opción que desea consultar: ");
+            int number1 = scanner.nextInt();
+
+            switch (number1) {
+                case 1:
+                    System.out.println("********************************************************************************");
+                    System.out.println("|                         Condicional Switch                                   |");
+                    System.out.println("********************************************************************************");
+                    System.out.println("|El condicional switch case es una estructura que evalúa más de un caso y se   |");
+                    System.out.println("|caracteriza por: Selección de una opción entre varias                         |");
+                    System.out.println("|Switch recibe un “caso” y lo evalúa hasta encontrar el caso que corresponda   |");
+                    System.out.println("|Se puede usar la opción “default” para cuando no se encuentra el caso dado.   |");
+                    System.out.println("********************************************************************************");
+                    scanner.nextLine();
+                    scanner.nextLine();
+                    break;
+                case 2:
+                    Ejemplos.EjemploSwitch();
+                    scanner.nextLine();
+                    scanner.nextLine();
+                    break;
+                case 3:
+                    salir8 = 1; // Regresar al menú principal
+                    break;
+                default:
+                    System.out.println("Opción no válida. Inténtelo de nuevo.");
+                    scanner.nextLine();
+                    scanner.nextLine();
+                    break;
+
+            }
+        } while (salir8 == 0);
+
+    }
+
+
 }
 
 

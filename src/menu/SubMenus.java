@@ -44,4 +44,68 @@ public class SubMenus {
     }
 
 
+    public static void Submenu2Dowhile(){
+
+        System.out.println("************************************");
+        System.out.println("|    SUBMENU Do While              |");
+        System.out.println("************************************");
+        System.out.println("| 1. Explicación                   |");
+        System.out.println("| 2. Ejemplo                       |");
+        System.out.println("| 3. Retornar al Menu Principal    |");
+        System.out.println("************************************");
+
+    }
+
+
+    public static void Submenu2While(){
+
+        System.out.println("************************************");
+        System.out.println("|    SUBMENU    While              |");
+        System.out.println("************************************");
+        System.out.println("| 1. Explicación                   |");
+        System.out.println("| 2. Ejemplo                       |");
+        System.out.println("| 3. Retornar al Menu Principal    |");
+        System.out.println("************************************");
+
+    }
+
+    public static void Submenu2For(){
+
+        System.out.println("************************************");
+        System.out.println("|    SUBMENU    For                |");
+        System.out.println("************************************");
+        System.out.println("| 1. Explicación                   |");
+        System.out.println("| 2. Ejemplo                       |");
+        System.out.println("| 3. Retornar al Menu Principal    |");
+        System.out.println("************************************");
+
+    }
+
+
+    public static void Submenu2If(){
+
+        System.out.println("************************************");
+        System.out.println("|    SUBMENU   If-Else-If Else     |");
+        System.out.println("************************************");
+        System.out.println("| 1. Explicación                   |");
+        System.out.println("| 2. Ejemplo                       |");
+        System.out.println("| 3. Retornar al Menu Principal    |");
+        System.out.println("************************************");
+
+    }
+
+
+    public static void Submenu2Switch(){
+
+        System.out.println("************************************");
+        System.out.println("|    SUBMENU    Switch             |");
+        System.out.println("************************************");
+        System.out.println("| 1. Explicación                   |");
+        System.out.println("| 2. Ejemplo                       |");
+        System.out.println("| 3. Retornar al Menu Principal    |");
+        System.out.println("************************************");
+
+    }
+
+
 }
